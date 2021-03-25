@@ -23,6 +23,7 @@ namespace ProjetoCadastro.Controllers
         public async Task<ActionResult<IEnumerable<Sexo>>> PegarSexoDescricao()
         {
             var  sexos = await _contexto.Sexo.ToListAsync();
+
             return sexos;
         }
     }
